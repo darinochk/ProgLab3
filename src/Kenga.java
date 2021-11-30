@@ -15,15 +15,5 @@ public class Kenga extends Animal {
 
 
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (o == this) {
-//            return true;
-//        }
-//        if (o == null || o.getClass() != this.getClass()) {
-//            return false;
-//        }
-//        Kenga ken = (Kenga) o;
-//        return Objects.equals(name, ken.name);
-//    }
+
 
