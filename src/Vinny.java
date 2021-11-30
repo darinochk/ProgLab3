@@ -1,7 +1,7 @@
 import static java.lang.Math.*;
-public class Vinny extends Animal implements IVinnyActions {
 
-    int ju;
+public class Vinny extends Animal implements IVinnyActions {
+    double chance;
     int skill = 3;
 
     Vinny(){
@@ -9,7 +9,7 @@ public class Vinny extends Animal implements IVinnyActions {
     }
 
     public void jump() {
-        ju = (int)(Math.random());
+        chance = random();
     }
 
     @Override
@@ -20,21 +20,21 @@ public class Vinny extends Animal implements IVinnyActions {
     @Override
     public void learnToJump() {
         place = Place.PLAYGROUND;
-
-        System.out.print(", всё ещё учился прыгать в ямке с песком, сейчас его ");
-        if (ju < 0.5) {
-            System.out.print("прыжок не удался.");
+        int successfulJumpsCounter = 0;
+        int jumps = 5;
+        System.out.print(", всё ещё учился прыгать в ямке с песком и сделал 5 прыжков:\n");
+        for (int i = 1; i <= jumps; i++) {
+            jump();
+            System.out.print(i + ". ");
+            if (chance >= 0.5) {
+                System.out.println("прыжок удался.");
+                successfulJumpsCounter++;
+                skill++;
+            }
+            else {
+                System.out.println("прыжок не удался.");
+            }
         }
-        if (ju >= 0.5) {
-            System.out.print("прыжок удался.");
-            skill = skill + 1;
-        }
+        System.out.println("Итого " + name + " прыгнул успешно " + successfulJumpsCounter + " раза из " + jumps);
     }
 }
-
-
-//    @Override
-//    public boolean equals(Object o) {
-//        if (skill >= 4) {return true;};
-//        if (skill < 4) {return false;};
-//    }
