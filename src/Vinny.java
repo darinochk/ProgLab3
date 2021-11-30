@@ -1,12 +1,11 @@
 import static java.lang.Math.*;
 
 public class Vinny extends Animal implements IVinnyActions {
+    Vinny(String name, int weight, int height, int birthYear) {
+        super(name, weight, height, birthYear);
+    }
     double chance;
     int skill = 3;
-
-    Vinny(){
-        this.name = "Пух";
-    }
 
     public void jump() {
         chance = random();

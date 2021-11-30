@@ -4,6 +4,15 @@ public abstract class Animal {
     protected String name;
     protected Place place;
     protected int birthYear;
+    protected int weight;
+    protected int height;
+
+    Animal(String name, int weight, int height, int birthYear){
+        this.name = name;
+        this.weight = weight;
+        this.height = height;
+        this.birthYear = birthYear;
+    }
 
     public String getName() {
         return name;

@@ -1,9 +1,8 @@
 public class Rabbit extends Animal implements IRabbitActions {
 
-
-    Rabbit(){
-        this.name = "Кролик";
-    }
+        Rabbit(String name, int weight, int height, int birthYear) {
+            super(name, weight, height, birthYear);
+        }
 
     @Override
     public void sit(){

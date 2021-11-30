@@ -1,6 +1,6 @@
 public class BabyRoo extends Animal{
-    public BabyRoo() {
-        this.name = "Крошка Ру";
+    BabyRoo(String name, int weight, int height, int birthYear) {
+        super(name, weight, height, birthYear);
     }
 
     public void play(Rabbit rabbit){
