@@ -46,4 +46,8 @@ public abstract class Animal {
         Animal ann = (Animal) o;
         return Objects.equals(name, ann.name);
     }
+    @Override
+    public int hashCode (){
+        return Objects.hash(name, weight, height, birthYear);
+    }
 }
