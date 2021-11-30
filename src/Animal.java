@@ -1,12 +1,7 @@
-
 public abstract class Animal {
     protected String name;
     protected Place place;
-
-    @Override
-    public String toString() {
-        return name;
-    }
+    protected int birthYear;
 
     public String getName() {
         return name;
@@ -22,5 +17,10 @@ public abstract class Animal {
 
     public void setPlace(Place place) {
         this.place = place;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
