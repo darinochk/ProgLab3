@@ -21,7 +21,7 @@ public class Vinny extends Animal implements IVinnyActions {
         place = Place.PLAYGROUND;
         int successfulJumpsCounter = 0;
         int jumps = 5;
-        System.out.print(", всё ещё учился прыгать в ямке с песком и сделал 5 прыжков:\n");
+        System.out.print(", всё ещё учился прыгать в "+ place.getName()+ " и сделал 5 прыжков:\n");
         for (int i = 1; i <= jumps; i++) {
             jump();
             System.out.print(i + ". ");
