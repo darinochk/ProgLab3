@@ -1,8 +1,12 @@
 public class Rabbit extends Animal implements IRabbitActions {
 
+
+
         Rabbit(String name, int weight, int height, int birthYear) {
             super(name, weight, height, birthYear);
         }
+    private static final double minLove = 1.0;
+    private static final double maxLove = 100.0;
 
     @Override
     public void sit(){
@@ -18,6 +22,11 @@ public class Rabbit extends Animal implements IRabbitActions {
     @Override
     public void love(BabyRoo babyRoo) {
         System.out.println( ", чувствуя, что любит " + babyRoo + " всё больше и больше. ");
+    }
+
+    public static class Love{
+        public static double getMinLove() { return minLove; }
+        private static double getMaxLove() { return maxLove; }
     }
 
 }

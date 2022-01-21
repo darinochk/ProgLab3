@@ -9,4 +9,5 @@ public enum Place {
     public String getName() {
         return name;
     }
+
 }

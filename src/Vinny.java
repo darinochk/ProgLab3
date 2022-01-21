@@ -11,10 +11,18 @@ public class Vinny extends Animal implements IVinnyActions {
         chance = random();
     }
 
+    public class Hadn{
+        public void hand(){};
+    }
+
     @Override
     public void tryToBe(Kenga kenga) {
         System.out.print("A " + name + ", который решил попробовать стать " + kenga);
     }
+//
+//    public Place getLoc() {
+//        return place;
+//    }
 
     @Override
     public void learnToJump() {

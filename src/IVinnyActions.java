@@ -3,4 +3,6 @@ public interface IVinnyActions {
     public void learnToJump();
     public void jump();
     public boolean equals(Object o);
+
+    //IVinnyActions getPlace();
 }

@@ -11,5 +11,4 @@ public class BabyRoo extends Animal{
         System.out.println("Но никого не было. ");
     }
 
-
 }

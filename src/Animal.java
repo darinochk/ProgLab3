@@ -22,10 +22,6 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public Place getPlace() {
-        return place;
-    }
-
     public void setPlace(Place place) {
         this.place = place;
     }
